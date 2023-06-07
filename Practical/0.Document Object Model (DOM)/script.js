@@ -1,0 +1,1 @@
+//it is model of whole web page. it is about how to manipulate html css 

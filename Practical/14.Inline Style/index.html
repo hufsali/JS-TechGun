@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Style</title>
+</head>
+<body>
+    <!-- the style changed via attribute is called inline style -->
+
+<button id="btn"  nam="form1"  style="color:blue;">Send</button>
+
+<script>
+    let btn=document.getElementById("btn");
+     btn.style.cssText +="background-color:red;  color:green; border: 1px solid purple; ";
+// btn.setAttribute('style' , 'color:white; background-color:red;');
+// btn.style.color="red"; changes only selected one single
+//inline styling has a problem , it removes former inline style
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

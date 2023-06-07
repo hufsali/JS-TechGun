@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner html</title>
+</head>
+<body>
+    <!-- ------------------------------------inner html has two works-------------------------------------------------------  -->
+    <!-- --------------------------------- 1. to get/fetch the whole html of selected element-----------------------------------  -->
+    
+    <!-- <div id="intro"> 
+<p>
+    Hello this is a paragraph tag
+</p>
+    </div>
+    <script>
+       let elm= document.getElementById("intro");
+let content=elm.innerHTML;
+console.log(content);
+
+
+
+    </script> -->
+
+
+<!-- ------------------------------------2.to change/set or modify the html of that element-------------------------------------- -->
+
+<div id="intro"> 
+    <p>
+        Hello this is a paragraph tag
+    </p>
+        </div>
+        <script>
+           let elm= document.getElementById("intro");
+   
+    elm.innerHTML="<h1> this is a heading </h1>"
+    
+    
+    
+        </script>
+</body>
+</html>

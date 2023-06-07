@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time out and Time Interval</title>
+</head>
+<body>
+  <button id="btn">Clear Interval</button>
+  
+  <script>
+
+
+   /* ---------------------------time out------number of specified mili seconds we want to wait for code execution 
+     web page opens and after 5 seconds opens a pop up
+ let timeoutId = setTimeout(myFunction , 5000)
+ function myFunction(){
+   alert("Please Subscribe")
+ }
+ if(){
+   clearTimeout(timeoutId);
+ }*/
+
+
+
+
+// --------------------------------set interval--------------------repeat after some some time---------------------------
+
+
+var t1=setInterval(fun , 2000);
+
+function fun(){
+  console.log("Please Subscribe");
+}
+let btn1=document.getElementById("btn");
+btn1.addEventListener('click' , function(){
+clearInterval(t1);
+})
+
+</script>
+
+</body>
+</html>

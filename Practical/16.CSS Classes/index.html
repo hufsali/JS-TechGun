@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Classes</title>
+    <style>
+.color{
+background-color:yellow;
+color:red;
+}
+.dim{
+    border:20px solid red;
+    padding:100px;
+}
+    </style>
+  </head>
+  <body>
+
+    <!-- -------------------------to manipulate class--------------------- -->
+    <!-- <div id="box" class="color "> add dim class here or *
+      <p>This is a dummy text</p>
+    </div>
+    <script>
+let box=document.getElementById("box");
+//console.log(box.className);
+box.className +="dim"; //* or append dim class here to add
+    </script> -->
+
+
+<!-- -----------------------------to know kon kon c classes hyn--------------------------------------  -->
+
+
+
+<!-- <div id="box" class="color dim "> 
+    <p>This is a dummy text</p>
+  </div>
+  <script>
+let box=document.getElementById("box");
+//console.log(box.classList);
+for(let css of box.classList){
+    console.log(css);
+}
+  </script> -->
+
+
+
+  <!-- ------------------------------------to add class---------------------------->
+
+
+
+  <!-- <div id="box" class="color"> 
+    <p>This is a dummy text</p>
+  </div>
+  <script>
+let box=document.getElementById("box");
+//console.log(box.classList);
+
+   box.classList.add("dim");
+  </script> -->
+
+
+ <!-- ------------------------------------to remove class---------------------------->
+
+
+
+ <!-- <div id="box" class="color dim"> 
+    <p>This is a dummy text</p>
+  </div>
+  <script>
+let box=document.getElementById("box");
+//console.log(box.classList);
+
+   box.classList.remove("dim");
+  </script> -->
+
+
+
+
+ <!-- ------------------------------------to replace class---------------------------->
+
+
+
+ <!-- <div id="box" class="color"> 
+    <p>This is a dummy text</p>
+  </div>
+  <script>
+let box=document.getElementById("box");
+//console.log(box.classList);
+
+   box.classList.replace( "color" , "dim");
+  </script> -->
+
+
+
+ <!-- ------------------------------------to see kon kon c class lgaen gy---------------------------->
+
+
+<!-- 
+ <div id="box" class="color"> 
+    <p>This is a dummy text</p>
+  </div>
+  <script>
+let box=document.getElementById("box");
+//console.log(box.classList);
+
+  let result= box.classList.contains("color");
+  console.log(result);
+  </script> -->
+
+
+
+ <!-- ------------------------to toggle :hy to htaa do nhi hy to lga do---------------- -->
+ <div id="box" class="color"> 
+    <p>This is a dummy text</p>
+  </div>
+  <script>
+let box=document.getElementById("box");
+
+  box.classList.toggle("color");
+
+  </script>
+
+
+
+
+  </body>
+</html>

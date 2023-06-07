@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create and Append Element</title>
+  </head>
+  <body>
+    <!-- to Append existing html (add new element)--------------------------normally replacing-----------------  -->
+    <!-- <div id="intro">
+<p>Hello this is a paragraph tag</p>
+    </div>
+    <script>
+        let elm=document.getElementById("intro");
+        elm.innerHTML = "<h1>This is a heading</h1>"; //append says don't replace p tag but add h tag
+    </script> -->
+
+    <!-- --------------------------------Appending (adding a new element)--------------------------------------------
+     
+        <div id="intro">
+<p>Hello this is a paragraph tag</p>
+    </div>
+    <script>
+        let elm=document.getElementById("intro");
+  let h1=document.createElement('h1');
+let text=document.createTextNode("I am here to care you");
+
+h1.appendChild(text);
+  elm.appendChild(h1);
+    </script> -->
+
+    <!-- --------------------------------Appending (adding a new class and id)-------------------------------------------- -->
+    
+    <!-- <div id="intro">
+      <p>Hello this is a paragraph tag</p>
+    </div>
+    <script>
+      let elm = document.getElementById("intro");
+      let h1 = document.createElement("h1");
+      h1.className = "try pi";
+      h1.id = "intro1";
+
+
+
+         /*adding text in appended element through a (method) createTextNode
+      let text = document.createTextNode("I am here to care you");
+      h1.appendChild(text);*/
+
+
+
+      //adding text and read in appended element throgh property (textContent)
+      h1.textContent="Content Added"
+      
+
+        elm.appendChild(h1);
+      // document.body.appendChild(h1);append outside dv append in the body
+    </script> -->
+
+
+    <!-- ------------------------------------------to read out the inner tag's content----------------------------------------------------------- 
+
+
+
+      <div id="intro">
+      <p id="p1">Hello this is a paragraph tag</p>
+    </div>
+    <script>
+      let elm = document.getElementById("intro");
+      let h1 = document.createElement("h1");
+      h1.className = "try pi";
+      h1.id = "intro1";
+
+
+
+         /*adding text in appended element through a (method) createTextNode
+      let text = document.createTextNode("I am here to care you");
+      h1.appendChild(text);*/
+
+
+
+      //adding text and read in appended element throgh property (textContent)
+      h1.textContent="Content Added"
+      
+
+        elm.appendChild(h1);
+      // document.body.appendChild(h1);append outside dv append in the body
+    let para= document.getElementById("p1");
+    console.log(para.textContent);
+    </script>  -->
+
+
+
+
+
+
+
+
+    
+<!-- __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________ -->
+  
+
+
+
+
+
+
+
+<!-- ---------------------------------------------more of Appending (Adding a new Element)-------------------------------------------------------------------- -->
+
+<ul id="list">
+    <li>list 1</li>
+    <li>list 2</li>
+    <li>list 3</li>
+    <li>list 4</li>
+</ul>
+<script>
+let list1=document.getElementById("list");
+let item=document.createElement("li");
+item.textContent="new list 5";
+list1.appendChild(item);
+
+</script>
+
+</body>
+</html>

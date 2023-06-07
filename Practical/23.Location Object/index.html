@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Object</title>
+  </head>
+  <body>
+    <button id="btn" onclick="fun()">reload</button>
+    <script>
+      /*  -----------------Properties of location object------------------------------
+      console.log(location.href);
+      console.log(location.pathname);
+      console.log(location.protocol);*/
+
+
+    /*
+     -------------------------3 methods of location object to redirect------------------------------------
+    function fun(){
+        // window.location="https://www.google.com";
+        // location.href="https://www.google.com";
+        location.assign("https://www.google.com");
+    }*/
+
+
+
+    /*--------------replace--------------replace (it does not enters browsing into history)------------
+
+
+    function fun(){
+        
+        location.replace("https://www.google.com");
+    } //after redirect we have no back button*/
+
+
+    // -------------------------reload----------------------
+
+
+    function fun(){
+        location.repload();
+    } 
+
+    </script>
+  </body>
+</html>

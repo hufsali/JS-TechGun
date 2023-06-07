@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width of an Eelement</title>
+    <style>
+      .color{
+      background-color:yellow;
+      color:red;
+      }
+      .dim{
+          border:20px solid red;
+          padding:100px;
+      }
+          </style>
+</head>
+<body>
+
+    <!-- ------------------------Height and Width of an Eelement including border----------------
+
+    <div id="box" class="color dim"> 
+    <p>This is a dummy text</p>
+  </div>
+  <script>
+let box=document.getElementById("box");
+let width=box.offsetWidth;
+let height=box.offsetHeight; //offset means border and padding included
+  // box.classList.toggle("color");
+  console.log(width);
+  console.log(height);
+
+  </script> -->
+
+
+   <!-- ------------------------Height and Width of an Eelement excluding border---------------- -->
+
+   <div id="box" class="color dim"> 
+    <p>This is a dummy text</p>
+  </div>
+  <script>
+let box=document.getElementById("box");
+let width=box.clientWidth;
+let height=box.clientHeight; 
+  // box.classList.toggle("color");
+  console.log(width);
+  console.log(height);
+
+  </script>
+</body>
+</html>

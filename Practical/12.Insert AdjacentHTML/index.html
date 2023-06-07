@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert AdjacentHTML</title>
+  </head>
+  <body>
+    <!-- ---------------4 positions to insert  no  need to create element------------- -->
+    <!-- 1st position: before begining -->
+    <div id="intro"><!--selected-->
+      
+      <!-- 2nd position: after begining -->
+      <h2>Heading</h2>
+      <p>This is a p tag</p>
+      <!-- 3rd position: before end-->
+    </div>
+    <!-- 4th position: after end -->
+  </body>
+  <script>
+    let elm=document.getElementById("intro");
+    let html="<h1>new h1</h1>";
+    elm.insertAdjacentHTML('beforebegin' , html);
+
+  </script>
+</html>

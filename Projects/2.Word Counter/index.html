@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <style>
+body{
+    padding:50px 100px;
+}
+h1{
+    text-align: center;
+    background-color: brown;
+    color:white;
+    padding: 10px;
+    margin: 0;
+}
+textarea{
+    width: 98.3%;
+    border:3px solid;
+    border-color: blueviolet;
+    font-size: 15px;
+}
+p{
+    text-align: center;
+    background-color: rgb(89, 89, 216);
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    padding:10px;
+    margin: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Word and Character Counter</h1>
+    <textarea id="textbox" cols="30" rows="10"></textarea>
+    <p>
+       <span id="word">0</span>  words and
+       <span id="char">0</span>  characters
+    </p>
+
+    <script>
+let textbox=document.getElementById("textbox");
+textbox.addEventListener('input' , function(){
+var text=this.value;
+let char=text.length;
+document.getElementById("char").innerHTML=char;
+text=text.trim(); //start and end me space denay sy word na barrhy
+let words=text.split(" ");
+
+
+let cleanList=words.filter(function(elm){
+return elm !="";
+})
+console.log(cleanList);
+document.getElementById("word").innerHTML=cleamList.length;
+})
+
+    </script>
+</body>
+</html>
